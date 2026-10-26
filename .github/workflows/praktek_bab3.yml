@@ -593,6 +593,7 @@ jobs:
 
           FILEB="src/component/KartuRingkasan.jsx"
           FILEB="src/component/TransactionManager.jsx"
+          FILEC="src/App.jsx"
 
 
           # Mendaftarkan teks yang TIDAK BOLEH dihapus oleh mahasiswa
@@ -612,7 +613,7 @@ jobs:
 
           cek_teks "$FILEB" " ambilDataAsync();"
           cek_teks "$FILEB" "ambilDataAsync();"
-          cek_teks "$FILEB" "<AppNavigation />"
+          cek_teks "$FILEC" "<AppNavigation />"
           # Cara menggunakannya 
           if [ $ERROR -eq 1 ]; then
             echo ""
