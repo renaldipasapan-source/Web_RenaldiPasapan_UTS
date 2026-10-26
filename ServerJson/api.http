@@ -2,4 +2,11 @@ GET http://localhost:3000/comments
 
 GET http://localhost:3000/posts
 
+<<<<<<< HEAD
+=======
+
+###
+### 
+
+>>>>>>> 8422aac568eb1fcb61bd4f708b977d000cd0eebd
 GET http://localhost:3000/transaksi
