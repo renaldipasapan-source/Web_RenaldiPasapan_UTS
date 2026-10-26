@@ -17,8 +17,7 @@ function FormTambahTransaksi() {
 
     try {
       // Simulasi pengiriman HTTP POST Request ke Server/API
-      const response = await 
-fetch('https://api.example.com/transaksi', {
+      const response = await fetch('https://api.example.com/transaksi', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -35,16 +34,14 @@ fetch('https://api.example.com/transaksi', {
     } catch (err) {
       setError(err.message);
     } finally {
-      setLoading(false); // Matikan status loading baik sukses maupun 
-gagal
+      setLoading(false); // Matikan status loading baik sukses maupun gagal
     }
   };
 
   return (
     <Form onSubmit={handleSubmit} className="p-3 border rounded">
       {error && <Alert variant="danger">{error}</Alert>}
-      {sukses && <Alert variant="success">Transaksi berhasil 
-disimpan!</Alert>}
+      {sukses && <Alert variant="success">Transaksi berhasil disimpan!</Alert>}
 
       <Form.Group className="mb-3">
         <Form.Label>Nominal Transaksi (Rp)</Form.Label>
@@ -57,12 +54,11 @@ disimpan!</Alert>}
         />
       </Form.Group>
 
-      {/* Button interaktif merespon status loading */}
+      {/* Button interaktif merespon status Loading */}
       <Button variant="primary" type="submit" disabled={loading}>
         {loading ? (
           <>
-            <Spinner as="span" animation="border" size="sm" 
-className="me-2" />
+            <Spinner as="span" animation="border" size="sm" className="me-2" />
             Menyimpan...
           </>
         ) : (

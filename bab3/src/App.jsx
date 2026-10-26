@@ -1,44 +1,31 @@
-// Mengimpor CSS global
-import './App.css';
+import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import TransaksiItem from './component/TransaksiItem'
+import KartuRingkasan from './component/KartuRingkasan'
+import Badge from './component/Badge'
+import WalletSummary from './component/WalletSummary'
+import CardStatusDemo from './component/CardStatusDemo'
+import AppNavigation from './component/AppNavigation'
+import TransactionManager from './component/TransactionManager'
 
-import { Route, Routes } from 'react-router-dom';
 
-// Mengimpor komponen-komponen pendukung yang ada di proyekmu
-import AppNavigation from './component/AppNavigation';
-import Badge from './component/Badge';
-import CardStatusDemo from './component/CardStatusDemo';
-import HeaderBanner from './component/HeaderBanner';
-import KartuRingkasan from './component/KartuRingkasan';
-import LayoutGrid from './component/LayoutGrid';
-import TransactionManager from './component/TransactionManager';
-import TransaksiItem from './component/TransaksiItem';
-import WalletSummary from './component/WalletSummary';
 
 function App() {
   return (
     <>
       <AppNavigation />
-      <main>
-        <Routes>
-          <Route path="/" element={null} />
-          <Route path="/transaksi" element={<TransaksiItem />} />
-          <Route
-            path="/badge"
-            element={<Badge tipe="Pemasukan">Pemasukan</Badge>}
-          />
-          <Route path="/card-status-demo" element={<CardStatusDemo />} />
-          <Route path="/header-banner" element={<HeaderBanner />} />
-          <Route
-            path="/transaction-manager"
-            element={<TransactionManager />}
-          />
-          <Route path="/kartu" element={<KartuRingkasan />} />
-          <Route path="/layout-grid" element={<LayoutGrid />} />
-          <Route path="/wallet" element={<WalletSummary />} />
-        </Routes>
-      </main>
+      <Routes>
+        <Route path='/transaksi' element={ <TransaksiItem />} />
+        <Route path='/kartu' element={ <KartuRingkasan />} />
+        <Route path='/badge' element={ <Badge />} />
+        <Route path='/wallet' element={ <WalletSummary />} />
+        <Route path='/LayoutGrid' element={ <LayoutGrid/>  } />
+        <Route path='/HeaderBanner' element={ <HeaderBanner/>  } />
+        <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
+        <Route path='/AppNavigation' element={ <AppNavigation/> } />
+        <Route path='/TransactionManager' element={ <TransactionManager/> } />
+      </Routes>
     </>
-  );
+  )
 }
-
 export default App;
