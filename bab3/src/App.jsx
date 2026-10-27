@@ -68,7 +68,7 @@ function App() {
         <Route path='/wallet' element={ <WalletSummary />} />
         <Route path='/layoutgrid' element={ <LayoutGrid/>  } />
         <Route path='/headerbanner' element={ <HeaderBanner/>  } />
-        <Route path='/cardstatusdemo' element={ <CardStatusDemo/> } />
+        <Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />
         <Route path='/appnavigation' element={ <AppNavigation/> } />
         <Route path='/transactionmanager' element={ <TransactionManager/> } />
         <Route path='/karturingkasan' element={ <KartuRingkasan/> } />
