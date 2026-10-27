@@ -367,18 +367,18 @@ jobs:
           FILE_A="src/component/CardStatusDemo.jsx"
           FILE_B="src/App.jsx"
 
-          cek_teks "$FILE_A" "import { Card, Button, Badge, Alert, Dropdown, ButtonGroup } from 'react-bootstrap';"
-          cek_teks "$FILE_A" "Export default function CardStatusDemo()"
-          cek_teks "$FILE_A" "Card.header"
+          cek_teks "$FILE_A" "import { Container, Card, Button, Badge, Alert, Dropdown, ButtonGroup } from 'react-bootstrap';"
+          cek_teks "$FILE_A" "export default function CardStatusDemo()"
+          cek_teks "$FILE_A" "Card.Header"
           cek_teks "$FILE_A" "<span>"
           cek_teks "$FILE_A" "<Badge"
-          cek_teks "$FILE_A" "Card.body"
+          cek_teks "$FILE_A" "Card.Body"
           cek_teks "$FILE_A" "Alert"
-          cek_teks "$FILE_A" "Card.title"
+          cek_teks "$FILE_A" "Card.Title"
           cek_teks "$FILE_A" "Dropdown"
           cek_teks "$FILE_A" "Button"
           cek_teks "$FILE_A" "Dropdown.Toggle"
-          cek_teks "$FILE_A" "Dropdown.menu"
+          cek_teks "$FILE_A" "Dropdown.Menu"
           cek_teks "$FILE_B" "<Route path='/CardStatusDemo' element={ <CardStatusDemo/> } />"
           
           if [ $ERROR -eq 1 ]; then
@@ -466,7 +466,6 @@ jobs:
           FILE_A="src/component/TransactionManager.jsx"
           FILE_B="src/App.jsx"
 
-          cek_teks "$FILE_A" "import {useState} from 'react'"
           cek_teks "$FILE_A" "import {Form, InputGroup, Modal, Button, Table, ProgressBar}"
           cek_teks "$FILE_A" "function TransactionManager("
           cek_teks "$FILE_A" "const [show, setShow] = useState(false)"

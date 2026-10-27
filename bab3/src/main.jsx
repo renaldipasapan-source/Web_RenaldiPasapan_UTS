@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 );
 
-//coba
+
 
 // ReactDOM.createRoot(document.getElementById('root')).render(
 //   <React.StrictMode>
@@ -25,5 +25,3 @@ createRoot(document.getElementById('root')).render(
 //     </BrowserRouter>
 //   </React.StrictMode>
 // );
-
-// apaaja
